@@ -2,6 +2,10 @@
 
 pragma solidity ^0.8.18;
 
+// If we need to make this contract work with ZkSync, we need to make some changes in order to check the change. Adding some checkers.
+// The reason is because not everything that works on vaniulla foundry works on zksync foundry.
+// Their are some cheatcodes that zkZync foundry does not support.
+
 import {Test, console} from "forge-std/Test.sol";
 import {FundMe} from "../../src/FundMe.sol";
 import {DeployFundMe} from "../../script/DeployFundMe.s.sol";
